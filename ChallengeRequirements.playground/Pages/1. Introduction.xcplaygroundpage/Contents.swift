@@ -99,13 +99,57 @@
  - I decided to stick with the URLSession. The note in the HomeViewController -> "Be sure to leverage the searchDataTask and use it wisely!" was just waiting for me to give it a cancellable `URLSessionDataTask` to stop network requests as the user types.
  - I use protocols and generics to make connecting to and requesting from an API scalable. The core protocols live in the Protocols folder and are called `Authorization`, `APIDefinition`, and `GraphQLRequest`
  
+ ## Interface
  
+ ![EXAMPLE](searchbar.png)
+ 
+ - Done
+ - Done
+ - Reviewed and Considered
+ - Done
+ 
+ ![EXAMPLE](collectionview.png)
+ 
+ - Done
+ - Done
+ - Saved and accessable in a view conroller when you press the bookmarks navigation item.
+ 
+ ![EXAMPLE](recentsearches.png)
+ 
+ - Number of lines set to 3
+ - Done
+ - I adjust the way the size of the cell is calculated in the collection view
+ - Did not have time
+ 
+ ## Test
+ 
+ - Filled in the two networking test. Used Mock Data for one.
+ - Wrote an XCUITest to validate that two elements are set up correctly on the HomeViewController. UI Tests are a very weak are of mine 🙁
+ 
+ ## Packaging
+ 
+ - Available at `git clone https://github.com/joninsky/YELPProject.git`
+ 
+ ## Notes
+ 
+ - No third party libraries used.
+ - I have poor error handling right now. I would want to make an error parser object to get human readable strign for each error and the record and display them in a globally acccesable way. Like an alert controller that takes an error object.
+ - Compiles
+ - I scrolled really really fast and tapped all around. No crashes yet!!
  
  ## Jon TODO
  
  - Review Access control of objects
  - Make comments
  - Write more tests
+ - Refactor Home View Controller
+ 
+ 
+ ## Jon other thoughts
+ 
+ - I liked the project and chose the GraphQL API so I could learn something new. (Making GraphQL requests with URLSession)
+ - UITest were really weak for me. I need to improve here.
+ - I would love to spend more time on UI. I hit a wall of time and had some other things for my current job come up.
  
  
  */
