@@ -59,6 +59,10 @@ extension BusinessCell: UIKitCodePreparable {
         
         
         //Set up self
+        self.contentView.layer.borderColor = UIColor.lightGray.cgColor
+        self.contentView.layer.borderWidth = 0.5
+        self.contentView.layer.cornerRadius = 4
+        self.contentView.clipsToBounds = true
         self.contentView.backgroundColor = UIColor.white
         self.contentView.addSubview(self.businessImage)
         self.contentView.addSubview(self.businessName)
