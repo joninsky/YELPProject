@@ -46,6 +46,10 @@
 		C3CEFE6B2262967000F594DF /* RecentSearchesViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CEFE6A2262967000F594DF /* RecentSearchesViewControllerDelegate.swift */; };
 		C3CEFE6D226296A100F594DF /* SearchCacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CEFE6C226296A100F594DF /* SearchCacher.swift */; };
 		C3CEFE6F2262A52700F594DF /* MockResults.json in Resources */ = {isa = PBXBuildFile; fileRef = C3CEFE6E2262A52700F594DF /* MockResults.json */; };
+		C3CEFE712263FC8000F594DF /* UIViewController_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CEFE702263FC8000F594DF /* UIViewController_Extensions.swift */; };
+		C3CEFE742264082E00F594DF /* EmptyDataSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CEFE732264082E00F594DF /* EmptyDataSetView.swift */; };
+		C3CEFE762264085200F594DF /* EmptyDataViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CEFE752264085200F594DF /* EmptyDataViewState.swift */; };
+		C3CEFE782264089C00F594DF /* UIView_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CEFE772264089C00F594DF /* UIView_Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +118,10 @@
 		C3CEFE6A2262967000F594DF /* RecentSearchesViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentSearchesViewControllerDelegate.swift; sourceTree = "<group>"; };
 		C3CEFE6C226296A100F594DF /* SearchCacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCacher.swift; sourceTree = "<group>"; };
 		C3CEFE6E2262A52700F594DF /* MockResults.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockResults.json; sourceTree = "<group>"; };
+		C3CEFE702263FC8000F594DF /* UIViewController_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController_Extensions.swift; sourceTree = "<group>"; };
+		C3CEFE732264082E00F594DF /* EmptyDataSetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyDataSetView.swift; sourceTree = "<group>"; };
+		C3CEFE752264085200F594DF /* EmptyDataViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyDataViewState.swift; sourceTree = "<group>"; };
+		C3CEFE772264089C00F594DF /* UIView_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView_Extensions.swift; sourceTree = "<group>"; };
 		D7F41E6A3E83D6BEDB401171 /* Pods-WeedmapsChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeedmapsChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeedmapsChallengeTests/Pods-WeedmapsChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		E5CD667392B1B4ABFB0BC0A3 /* Pods-WeedmapsChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeedmapsChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeedmapsChallengeTests/Pods-WeedmapsChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E7C87C8E727A397680DC3145 /* Pods_WeedmapsChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeedmapsChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -231,6 +239,7 @@
 		5ABB14AE2167C62400A2CB2C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				C3CEFE722264080300F594DF /* Views */,
 				C3CEFE5D2262610200F594DF /* Global */,
 				C3CEFE412261217000F594DF /* Controllers */,
 				C3CEFE402261212500F594DF /* Models */,
@@ -308,6 +317,8 @@
 			isa = PBXGroup;
 			children = (
 				C3CEFE6422627CB400F594DF /* UIImageView_Extensions.swift */,
+				C3CEFE702263FC8000F594DF /* UIViewController_Extensions.swift */,
+				C3CEFE772264089C00F594DF /* UIView_Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -317,6 +328,7 @@
 			children = (
 				C3CEFE4F226136FB00F594DF /* Errors */,
 				C3CEFE5B226260E000F594DF /* LocationServiceStatus.swift */,
+				C3CEFE752264085200F594DF /* EmptyDataViewState.swift */,
 			);
 			path = Enumerations;
 			sourceTree = "<group>";
@@ -373,6 +385,14 @@
 				C3CEFE66226281D500F594DF /* variables.swift */,
 			);
 			path = Global;
+			sourceTree = "<group>";
+		};
+		C3CEFE722264080300F594DF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C3CEFE732264082E00F594DF /* EmptyDataSetView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		FA453FA14D74C5D61318180A /* Pods */ = {
@@ -602,6 +622,7 @@
 			files = (
 				C3CEFE692262963D00F594DF /* RecentSearchesViewController.swift in Sources */,
 				C3CEFE6D226296A100F594DF /* SearchCacher.swift in Sources */,
+				C3CEFE782264089C00F594DF /* UIView_Extensions.swift in Sources */,
 				C3CEFE5F2262610F00F594DF /* Notifications.swift in Sources */,
 				C3CEFE4A226125EE00F594DF /* YELPAPIAuthorization.swift in Sources */,
 				C3CEFE53226158F100F594DF /* GraphQLRequest.swift in Sources */,
@@ -612,7 +633,9 @@
 				C3CEFE6522627CB400F594DF /* UIImageView_Extensions.swift in Sources */,
 				5ABB14BE2167D2D900A2CB2C /* BusinessCell.swift in Sources */,
 				C3CEFE46226121FE00F594DF /* GraphQLNetworkControllerAvailable.swift in Sources */,
+				C3CEFE712263FC8000F594DF /* UIViewController_Extensions.swift in Sources */,
 				C3CEFE5522615ABA00F594DF /* GraphQLRequestError.swift in Sources */,
+				C3CEFE762264085200F594DF /* EmptyDataViewState.swift in Sources */,
 				C3CEFE4C2261351800F594DF /* APIDefinition.swift in Sources */,
 				C3CEFE4E226135D200F594DF /* YELPAPIDefinition.swift in Sources */,
 				5ABB14B52167C6EB00A2CB2C /* Business.swift in Sources */,
@@ -620,6 +643,7 @@
 				C3CEFE5C226260E000F594DF /* LocationServiceStatus.swift in Sources */,
 				C3CEFE442261219200F594DF /* GraphQLRequestController.swift in Sources */,
 				C3CEFE512261371100F594DF /* APIDefinitionError.swift in Sources */,
+				C3CEFE742264082E00F594DF /* EmptyDataSetView.swift in Sources */,
 				5ABB147F2167C42300A2CB2C /* HomeViewController.swift in Sources */,
 				C3CEFE6B2262967000F594DF /* RecentSearchesViewControllerDelegate.swift in Sources */,
 				C3CEFE67226281D500F594DF /* variables.swift in Sources */,
